@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wettergrafik Wolkenstein</title>
+  <title>Wettergrafik Marienberg</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap');
 
@@ -309,7 +309,7 @@
   <div class="header-inner">
     <div class="station">
       <span class="station-label">Vorhersage · DWD MOSMIX · Station Marienberg 10579</span>
-      <h1>Wetter <span>Wolkenstein</span></h1>
+      <h1>Wetter <span>Marienberg</span></h1>
     </div>
     <div class="meta">
       <span class="meta-label">Grafik erstellt am</span>
@@ -322,8 +322,8 @@
 <main>
   <div class="grafik-wrapper">
     <img id="grafik"
-         src="wettergrafik_wolkenstein.png"
-         alt="Vorhersagediagramm Wolkenstein"
+         src="wettergrafik_marienberg.png"
+         alt="Vorhersagediagramm Marienberg"
          onload="bildGeladen()"
          onerror="bildFehler()">
     <div class="lade-overlay" id="overlay">
@@ -333,7 +333,7 @@
 
   <div class="info-leiste">
     <div class="info-chips">
-      <span class="chip hervorgehoben">09429 Wolkenstein</span>
+      <span class="chip hervorgehoben">09496 Marienberg</span>
       <span class="chip">Erzgebirge · Sachsen</span>
       <span class="chip">Aktualisierung alle 6 h</span>
       <span class="chip">5:00 · 11:00 · 17:00 · 23:00 Uhr</span>
@@ -364,7 +364,7 @@
     const img = document.getElementById('grafik');
     const overlay = document.getElementById('overlay');
     overlay.classList.add('aktiv');
-    const basis = 'wettergrafik_wolkenstein.png';
+    const basis = 'wettergrafik_marienberg.png';
     img.src = basis + '?t=' + Date.now();
   }
 
